@@ -12,6 +12,7 @@
     "tslib": "^1.7.0"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.8",
     "@types/classnames": "^2.2.0",
     "@types/enzyme": "^2.8.4",
     "@types/jest": "^20.0.5",
@@ -32,6 +33,7 @@
     "inline-manifest-webpack-plugin": "^3.0.1",
     "jest": "^20.0.3",
     "parallelshell": "^3.0.1",
+    "polished": "^1.4.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-highlight": "^0.10.0",
@@ -40,6 +42,7 @@
     "script-ext-html-webpack-plugin": "^1.8.5",
     "shx": "^0.2.2",
     "style-loader": "^0.18.2",
+    "styled-components": "^2.1.2",
     "typescript": "^2.4.2",
     "watch": "^1.0.2",
     "webpack": "^3.4.1",
@@ -56,6 +59,7 @@
     "watch:lib": "watch \"npm run deploy\" src/ --wait=2000 --ignoreUnreadable",
     "watch:docs": "watch \"npm run docs\" docs/ --wait=2000 --ignoreUnreadable",
     "watch:all": "parallelshell \"npm run watch:lib\" \"npm run watch:docs\"",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "prepublish": "npm run build"
   },
   "jest": {
